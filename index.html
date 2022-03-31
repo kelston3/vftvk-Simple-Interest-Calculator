@@ -9,10 +9,10 @@
        <div class="maindiv">
          <h1>Simple Interest Calculator</h1>
          <form class="CalculatorFormsec" >
-         Amount <input type="number"  id="principal">  <br/>
+         Amount <input type="number" id="principal" required>  <br/>
          Rate <input onchange="updateRate()" type="range" min="minval" max="maxval" value="default_val" id="rate"><span id="rate_val">10.25 %</span><br/>
          No. of Years
-          <select>
+          <select id="years">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -26,10 +26,11 @@
           </select>
           <br/>
          Interest : <span id="result"></span><br>
+
          </form>
          <button onclick="compute()">Compute Interest</button>
-         <span id="result"></span>
+
        </div>
-       <footer>&#169; This calculator beloongs to Kenny Elston</footer>
+       <footer>&#169; This calculator belongs to Kenny Elston</footer>
     </body>
 </html>
