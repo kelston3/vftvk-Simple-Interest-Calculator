@@ -29,7 +29,7 @@ function compute() {
     var interest = principal * years * rate/100;
 
     // Prints out the results for the user to review
-    document.getElementById("result").innerHTML="\<br/>If you deposit "+principal+",\<br\>at an interest rate of "+rate+"%\<br\>You will receive an amount of "+interest+",\<br\>in the year  "+newYear+" \<br\>"
+    document.getElementById("result").innerHTML="\<br/>If you deposit <span class=\"yellowhighlight1\">"+principal+"</span>,\<br\>at an interest rate of <span class=\"yellowhighlight1\">"+rate+"%</span>\<br\>You will receive an amount of <span class=\"yellowhighlight1\">"+interest+"</span>,\<br\>in the year  <span class=\"yellowhighlight1\">"+newYear+"</span> \<br\>"
 
 }
 
